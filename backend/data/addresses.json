@@ -1,0 +1,40 @@
+{
+  "addresses": [
+    {
+      "id": "addr_1761456222722_bv0w526uv",
+      "userId": "admin_taquy778_2025",
+      "type": "home",
+      "fullName": "Nguyễn Vũ Cẩm LY",
+      "phone": "0374732997",
+      "province": "Thành phố Hải Phòng",
+      "provinceCode": "31",
+      "district": "Quận Lê Chân",
+      "districtCode": "305",
+      "ward": "Phường Trần Nguyên Hãn",
+      "wardCode": "11383",
+      "street": "1 Lê Hồng Phong ",
+      "fullAddress": "1 Lê Hồng Phong , Phường Trần Nguyên Hãn, Quận Lê Chân, Thành phố Hải Phòng",
+      "isDefault": true,
+      "createdAt": "2025-10-26T05:23:42.723Z",
+      "updatedAt": "2025-10-26T05:23:42.723Z"
+    },
+    {
+      "id": "addr_1762962487598_gjj6tikzw",
+      "userId": "135ff474-53ed-4b4d-84a1-9375c9791dbb",
+      "type": "office",
+      "fullName": "Hạnh Nhi",
+      "phone": "0901234567",
+      "province": "Thành phố Hà Nội",
+      "provinceCode": "1",
+      "district": "Quận Thanh Xuân",
+      "districtCode": "9",
+      "ward": "Phường Thanh Xuân Trung",
+      "wardCode": "355",
+      "street": "Nguyễn Trãi",
+      "fullAddress": "Nguyễn Trãi, Phường Thanh Xuân Trung, Quận Thanh Xuân, Thành phố Hà Nội",
+      "isDefault": true,
+      "createdAt": "2025-11-12T15:48:07.598Z",
+      "updatedAt": "2025-11-12T15:48:07.598Z"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "requests": [
+    {
+      "userId": "admin_taquy778_2025",
+      "type": "email_change",
+      "data": {
+        "currentEmail": "taquy778@gmail.com",
+        "newEmail": "hphwg2211@gmail.com"
+      },
+      "reason": "mất gmail",
+      "status": "rejected",
+      "id": "req_1762861185836_vnh362c",
+      "createdAt": "2025-11-11T11:39:45.836Z",
+      "updatedAt": "2025-11-12T07:51:16.257Z",
+      "adminNote": "abc",
+      "processedBy": "taquy778@gmail.com",
+      "processedAt": "2025-11-12T07:51:16.257Z"
+    },
+    {
+      "userId": "135ff474-53ed-4b4d-84a1-9375c9791dbb",
+      "type": "phone_change",
+      "data": {
+        "currentPhone": "0901234567",
+        "newPhone": "0123456789"
+      },
+      "reason": "bbbbbbbbbbbbbbbbbbbbbbbbb",
+      "status": "approved",
+      "id": "req_1762962519455_b41euio",
+      "createdAt": "2025-11-12T15:48:39.455Z",
+      "updatedAt": "2025-11-12T15:52:10.813Z",
+      "processedBy": "taquy778@gmail.com",
+      "processedAt": "2025-11-12T15:52:10.812Z"
+    }
+  ]
+}

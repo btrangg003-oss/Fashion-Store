@@ -1,0 +1,30 @@
+{
+  "name": "fashion-store-admin",
+  "version": "1.0.0",
+  "description": "Fashion Store - Admin Dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.32",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.13",
+    "framer-motion": "^10.18.0",
+    "react-icons": "^4.12.0",
+    "recharts": "^2.12.7",
+    "exceljs": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.32"
+  }
+}

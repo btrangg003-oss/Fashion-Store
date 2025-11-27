@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+.next/
+*/.next/
+out/
+*/out/
+dist/
+*/dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.*.local
+*/.env
+*/.env.local
+*/.env.production
+*/.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+
+# Misc
+*.pem
+.vercel
+
+# Old folders (duplicates - ignore them)
+/components/
+/contexts/
+/styles/
+/lib/
+/types/
+/data/
+/scripts/
+/pages/
+/public/
+/tests/
+/hooks/
+/utils/
+
+# Cleanup scripts (not needed in repo)
+cleanup-old-files.bat
+cleanup-old-files.sh
+FILES_TO_DELETE.md

@@ -1,0 +1,585 @@
+import { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import { FiMail, FiLock, FiEye, FiEyeOff, FiUser, FiPhone } from 'react-icons/fi'
+import { useAuth } from '../../contexts/AuthContext'
+
+const Section = styled.section`
+  padding: 120px 0 80px;
+  background: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+`
+
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+`
+
+const TwoColumnLayout = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const ImageSection = styled.div`
+  height: 100%;
+  min-height: 700px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.9) 0%, rgba(255, 140, 66, 0.9) 100%),
+              url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  color: white;
+  text-align: center;
+  
+  @media (max-width: 968px) {
+    display: none;
+  }
+`
+
+const ImageLogo = styled.div`
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+`
+
+const ImageTitle = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+`
+
+const ImageText = styled.p`
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  max-width: 400px;
+`
+
+const FormSection = styled.div`
+  padding: 60px;
+  
+  @media (max-width: 768px) {
+    padding: 40px 30px;
+  }
+`
+
+const FormCard = styled(motion.div)`
+  width: 100%;
+`
+
+const Header = styled.div`
+  text-align: center;
+  margin-bottom: 40px;
+`
+
+const Title = styled.h1`
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+`
+
+const Subtitle = styled.p`
+  color: #666;
+  font-size: 1rem;
+`
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`
+
+const FormRow = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const FormGroup = styled.div`
+  position: relative;
+`
+
+const Label = styled.label`
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+`
+
+const InputContainer = styled.div`
+  position: relative;
+`
+
+const Input = styled.input<{ hasIcon?: boolean }>`
+  width: 100%;
+  padding: 14px 16px;
+  padding-left: ${props => props.hasIcon ? '48px' : '16px'};
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  &.error {
+    border-color: #e74c3c;
+  }
+`
+
+const InputIcon = styled.div`
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1.1rem;
+`
+
+const PasswordToggle = styled.button`
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1.1rem;
+  padding: 4px;
+  
+  &:hover {
+    color: #333;
+  }
+`
+
+const ErrorMessage = styled.span`
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: block;
+`
+
+const CheckboxGroup = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 10px 0;
+  
+  input[type="checkbox"] {
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    
+    a {
+      color: #667eea;
+      text-decoration: underline;
+      
+      &:hover {
+        color: #5a6fd8;
+      }
+    }
+  }
+`
+
+const SubmitButton = styled(motion.button) <{ isLoading: boolean }>`
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 1rem;
+  margin-top: 10px;
+  opacity: ${props => props.isLoading ? 0.7 : 1};
+  cursor: ${props => props.isLoading ? 'not-allowed' : 'pointer'};
+  
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  }
+`
+
+const ServerError = styled.div`
+  background: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+`
+
+const SuccessMessage = styled.div`
+  background: #efe;
+  color: #363;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+`
+
+const LoginLink = styled.div`
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+  
+  a {
+    color: #667eea;
+    font-weight: 600;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`
+
+const RegisterForm = () => {
+    const router = useRouter()
+    const { register } = useAuth()
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        password: '',
+        confirmPassword: '',
+        agreeTerms: false,
+        agreeNewsletter: false
+    })
+    const [showPassword, setShowPassword] = useState(false)
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+    const [errors, setErrors] = useState<{ [key: string]: string }>({})
+    const [serverError, setServerError] = useState('')
+    const [successMessage, setSuccessMessage] = useState('')
+
+    const validateForm = () => {
+        const newErrors: { [key: string]: string } = {}
+
+        if (!formData.firstName.trim()) {
+            newErrors.firstName = 'Vui lòng nhập họ'
+        }
+
+        if (!formData.lastName.trim()) {
+            newErrors.lastName = 'Vui lòng nhập tên'
+        }
+
+        if (!formData.email.trim()) {
+            newErrors.email = 'Vui lòng nhập email'
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+            newErrors.email = 'Email không hợp lệ'
+        }
+
+        if (!formData.phone.trim()) {
+            newErrors.phone = 'Vui lòng nhập số điện thoại'
+        } else if (!/^[0-9]{10,11}$/.test(formData.phone.replace(/\s/g, ''))) {
+            newErrors.phone = 'Số điện thoại không hợp lệ'
+        }
+
+        if (!formData.password.trim()) {
+            newErrors.password = 'Vui lòng nhập mật khẩu'
+        } else if (formData.password.length < 6) {
+            newErrors.password = 'Mật khẩu phải có ít nhất 6 ký tự'
+        }
+
+        if (!formData.confirmPassword.trim()) {
+            newErrors.confirmPassword = 'Vui lòng xác nhận mật khẩu'
+        } else if (formData.password !== formData.confirmPassword) {
+            newErrors.confirmPassword = 'Mật khẩu xác nhận không khớp'
+        }
+
+        if (!formData.agreeTerms) {
+            newErrors.agreeTerms = 'Vui lòng đồng ý với điều khoản sử dụng'
+        }
+
+        setErrors(newErrors)
+        return Object.keys(newErrors).length === 0
+    }
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault()
+
+        if (!validateForm()) {
+            return
+        }
+
+        setIsLoading(true)
+        setServerError('')
+        setSuccessMessage('')
+
+        try {
+            const result = await register({
+                email: formData.email,
+                firstName: formData.firstName,
+                lastName: formData.lastName,
+                phone: formData.phone,
+                password: formData.password
+            })
+
+            if (result.success) {
+                setSuccessMessage('Đăng ký thành công! Vui lòng kiểm tra email để xác thực tài khoản.')
+                
+                // Store email for verification page
+                if (typeof window !== 'undefined') {
+                    localStorage.setItem('pendingVerificationEmail', formData.email)
+                }
+                
+                // Redirect to verification page after 2 seconds
+                setTimeout(() => {
+                    router.push(`/auth/verify?email=${encodeURIComponent(formData.email)}`)
+                }, 2000)
+            } else {
+                setServerError(result.message || 'Đăng ký thất bại')
+            }
+        } catch (error) {
+            console.error('Registration error:', error)
+            setServerError('Có lỗi xảy ra. Vui lòng thử lại.')
+        } finally {
+            setIsLoading(false)
+        }
+    }
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value, type, checked } = e.target
+        setFormData(prev => ({
+            ...prev,
+            [name]: type === 'checkbox' ? checked : value
+        }))
+
+        // Clear error when user starts typing
+        if (errors[name]) {
+            setErrors(prev => ({ ...prev, [name]: '' }))
+        }
+    }
+
+    return (
+        <Section>
+            <Container>
+                <TwoColumnLayout>
+                    <ImageSection>
+                        <ImageLogo>FASHION</ImageLogo>
+                        <ImageTitle>Fashion Store</ImageTitle>
+                        <ImageText>
+                            Tham gia cộng đồng thời trang của chúng tôi. 
+                            Nhận ưu đãi độc quyền và cập nhật xu hướng mới nhất!
+                        </ImageText>
+                    </ImageSection>
+                    
+                    <FormSection>
+                        <FormCard
+                            initial={{ opacity: 0, x: 30 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <Header>
+                                <Title>Đăng ký tài khoản</Title>
+                                <Subtitle>Tạo tài khoản để trải nghiệm mua sắm tuyệt vời</Subtitle>
+                            </Header>
+
+                            <Form onSubmit={handleSubmit}>
+                        {serverError && <ServerError>{serverError}</ServerError>}
+                        {successMessage && <SuccessMessage>{successMessage}</SuccessMessage>}
+                        
+                        <FormRow>
+                            <FormGroup>
+                                <Label>Họ *</Label>
+                                <InputContainer>
+                                    <InputIcon>
+                                        <FiUser />
+                                    </InputIcon>
+                                    <Input
+                                        type="text"
+                                        name="firstName"
+                                        value={formData.firstName}
+                                        onChange={handleChange}
+                                        placeholder="Nhập họ của bạn"
+                                        hasIcon
+                                        className={errors.firstName ? 'error' : ''}
+                                    />
+                                </InputContainer>
+                                {errors.firstName && <ErrorMessage>{errors.firstName}</ErrorMessage>}
+                            </FormGroup>
+
+                            <FormGroup>
+                                <Label>Tên *</Label>
+                                <Input
+                                    type="text"
+                                    name="lastName"
+                                    value={formData.lastName}
+                                    onChange={handleChange}
+                                    placeholder="Nhập tên của bạn"
+                                    className={errors.lastName ? 'error' : ''}
+                                />
+                                {errors.lastName && <ErrorMessage>{errors.lastName}</ErrorMessage>}
+                            </FormGroup>
+                        </FormRow>
+
+                        <FormGroup>
+                            <Label>Email *</Label>
+                            <InputContainer>
+                                <InputIcon>
+                                    <FiMail />
+                                </InputIcon>
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    placeholder="Nhập email của bạn"
+                                    hasIcon
+                                    className={errors.email ? 'error' : ''}
+                                />
+                            </InputContainer>
+                            {errors.email && <ErrorMessage>{errors.email}</ErrorMessage>}
+                        </FormGroup>
+
+                        <FormGroup>
+                            <Label>Số điện thoại *</Label>
+                            <InputContainer>
+                                <InputIcon>
+                                    <FiPhone />
+                                </InputIcon>
+                                <Input
+                                    type="tel"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    placeholder="Nhập số điện thoại"
+                                    hasIcon
+                                    className={errors.phone ? 'error' : ''}
+                                />
+                            </InputContainer>
+                            {errors.phone && <ErrorMessage>{errors.phone}</ErrorMessage>}
+                        </FormGroup>
+
+                        <FormGroup>
+                            <Label>Mật khẩu *</Label>
+                            <InputContainer>
+                                <InputIcon>
+                                    <FiLock />
+                                </InputIcon>
+                                <Input
+                                    type={showPassword ? 'text' : 'password'}
+                                    name="password"
+                                    value={formData.password}
+                                    onChange={handleChange}
+                                    placeholder="Nhập mật khẩu"
+                                    hasIcon
+                                    className={errors.password ? 'error' : ''}
+                                />
+                                <PasswordToggle
+                                    type="button"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                >
+                                    {showPassword ? <FiEyeOff /> : <FiEye />}
+                                </PasswordToggle>
+                            </InputContainer>
+                            {errors.password && <ErrorMessage>{errors.password}</ErrorMessage>}
+                        </FormGroup>
+
+                        <FormGroup>
+                            <Label>Xác nhận mật khẩu *</Label>
+                            <InputContainer>
+                                <InputIcon>
+                                    <FiLock />
+                                </InputIcon>
+                                <Input
+                                    type={showConfirmPassword ? 'text' : 'password'}
+                                    name="confirmPassword"
+                                    value={formData.confirmPassword}
+                                    onChange={handleChange}
+                                    placeholder="Nhập lại mật khẩu"
+                                    hasIcon
+                                    className={errors.confirmPassword ? 'error' : ''}
+                                />
+                                <PasswordToggle
+                                    type="button"
+                                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                                >
+                                    {showConfirmPassword ? <FiEyeOff /> : <FiEye />}
+                                </PasswordToggle>
+                            </InputContainer>
+                            {errors.confirmPassword && <ErrorMessage>{errors.confirmPassword}</ErrorMessage>}
+                        </FormGroup>
+
+                        <CheckboxGroup>
+                            <input
+                                type="checkbox"
+                                name="agreeTerms"
+                                checked={formData.agreeTerms}
+                                onChange={handleChange}
+                            />
+                            <label>
+                                Tôi đồng ý với <Link href="/terms">Điều khoản sử dụng</Link> và <Link href="/privacy">Chính sách bảo mật</Link> của Fashion Store *
+                            </label>
+                        </CheckboxGroup>
+                        {errors.agreeTerms && <ErrorMessage>{errors.agreeTerms}</ErrorMessage>}
+
+                        <CheckboxGroup>
+                            <input
+                                type="checkbox"
+                                name="agreeNewsletter"
+                                checked={formData.agreeNewsletter}
+                                onChange={handleChange}
+                            />
+                            <label>
+                                Tôi muốn nhận email về sản phẩm mới và ưu đãi đặc biệt
+                            </label>
+                        </CheckboxGroup>
+
+                        <SubmitButton
+                            type="submit"
+                            isLoading={isLoading}
+                            disabled={isLoading}
+                            whileHover={{ scale: isLoading ? 1 : 1.02 }}
+                            whileTap={{ scale: isLoading ? 1 : 0.98 }}
+                        >
+                            {isLoading ? 'Đang tạo tài khoản...' : 'Đăng ký'}
+                        </SubmitButton>
+                    </Form>
+
+                    <LoginLink>
+                        Đã có tài khoản? <Link href="/auth/login">Đăng nhập ngay</Link>
+                    </LoginLink>
+                        </FormCard>
+                    </FormSection>
+                </TwoColumnLayout>
+            </Container>
+        </Section>
+    )
+}
+
+export default RegisterForm

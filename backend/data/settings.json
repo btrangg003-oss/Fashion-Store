@@ -1,0 +1,33 @@
+{
+  "general": {
+    "siteName": "Fashion Store",
+    "siteUrl": "https://fashionstore.com",
+    "contactEmail": "contact@fashionstore.com",
+    "supportPhone": "1900-xxxx"
+  },
+  "payment": {
+    "currency": "VND",
+    "taxRate": 10,
+    "shippingFee": 30000,
+    "freeShippingThreshold": 500000
+  },
+  "email": {
+    "provider": "gmail",
+    "fromName": "Fashion Store",
+    "fromEmail": "noreply@fashionstore.com",
+    "smtpHost": "smtp.gmail.com",
+    "smtpPort": 587
+  },
+  "security": {
+    "sessionTimeout": 30,
+    "maxLoginAttempts": 5,
+    "passwordMinLength": 8,
+    "requireEmailVerification": true,
+    "enableTwoFactor": false
+  },
+  "inventory": {
+    "lowStockThreshold": 10,
+    "autoReorderEnabled": false,
+    "reorderQuantity": 50
+  }
+}

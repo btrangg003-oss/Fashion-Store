@@ -1,0 +1,566 @@
+{
+  "orders": [
+    {
+      "id": "order_1727856000000_abc123",
+      "orderNumber": "FS241001001",
+      "userId": "680e1784-b716-4bf4-b7f4-3c09fea5ab65",
+      "items": [
+        {
+          "id": "1",
+          "name": "Áo thun basic trắng",
+          "price": 299000,
+          "quantity": 2,
+          "size": "M",
+          "color": "Trắng",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+        },
+        {
+          "id": "2",
+          "name": "Quần jeans slim fit",
+          "price": 599000,
+          "quantity": 1,
+          "size": "30",
+          "color": "Xanh đậm",
+          "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400"
+        }
+      ],
+      "subtotal": 1197000,
+      "shipping": 30000,
+      "total": 1227000,
+      "status": "delivered",
+      "paymentMethod": "cod",
+      "shippingAddress": {
+        "fullName": "Nhi Nhi",
+        "phone": "0372895004",
+        "address": "123 Nguyễn Văn Linh",
+        "ward": "Phường 1",
+        "district": "Quận 7",
+        "city": "TP.HCM"
+      },
+      "notes": "Giao hàng giờ hành chính",
+      "createdAt": "2025-10-01T10:30:00.000Z",
+      "updatedAt": "2025-10-01T15:45:00.000Z"
+    },
+    {
+      "id": "order_1727942400000_def456",
+      "orderNumber": "FS241002002",
+      "userId": "21965b51-0435-4cc2-9ebd-85ebba537110",
+      "items": [
+        {
+          "id": "3",
+          "name": "Váy maxi hoa nhí",
+          "price": 450000,
+          "quantity": 1,
+          "size": "S",
+          "color": "Hồng",
+          "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400"
+        }
+      ],
+      "subtotal": 450000,
+      "shipping": 30000,
+      "total": 480000,
+      "status": "shipping",
+      "paymentMethod": "banking",
+      "shippingAddress": {
+        "fullName": "Nhi Baby",
+        "phone": "0372987004",
+        "address": "456 Lê Văn Việt",
+        "ward": "Phường Tăng Nhơn Phú A",
+        "district": "Quận 9",
+        "city": "TP.HCM"
+      },
+      "notes": "",
+      "createdAt": "2025-10-02T08:15:00.000Z",
+      "updatedAt": "2025-10-02T09:30:00.000Z"
+    },
+    {
+      "id": "order_1728028800000_ghi789",
+      "orderNumber": "FS241003003",
+      "userId": "680e1784-b716-4bf4-b7f4-3c09fea5ab65",
+      "items": [
+        {
+          "id": "4",
+          "name": "Áo khoác bomber",
+          "price": 799000,
+          "quantity": 1,
+          "size": "L",
+          "color": "Đen",
+          "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400"
+        },
+        {
+          "id": "5",
+          "name": "Giày sneaker trắng",
+          "price": 1200000,
+          "quantity": 1,
+          "size": "42",
+          "color": "Trắng",
+          "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400"
+        }
+      ],
+      "subtotal": 1999000,
+      "shipping": 0,
+      "total": 1999000,
+      "status": "cancelled",
+      "paymentMethod": "banking",
+      "shippingAddress": {
+        "fullName": "Nhi Nhi",
+        "phone": "0372895004",
+        "address": "123 Nguyễn Văn Linh",
+        "ward": "Phường 1",
+        "district": "Quận 7",
+        "city": "TP.HCM"
+      },
+      "notes": "Miễn phí ship cho đơn hàng trên 1.5M",
+      "createdAt": "2025-10-03T14:20:00.000Z",
+      "updatedAt": "2025-10-14T15:09:56.248Z",
+      "paymentStatus": "failed",
+      "paidAt": "2025-10-14T15:04:59.980Z",
+      "paymentFailureReason": "Refunded by admin"
+    },
+    {
+      "orderId": "ORD1760629535284",
+      "orderNumber": "ORD1760629535284",
+      "userId": null,
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "nhi",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "nhi",
+        "phone": "0374732997",
+        "address": "Hùng vương",
+        "ward": "ikk",
+        "district": "a",
+        "city": "Hà Nội"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng nhanh",
+        "price": 50000,
+        "estimatedDays": "1-2 ngày"
+      },
+      "items": [
+        {
+          "id": "test-product-1",
+          "name": "Váy da hổi sang trọng",
+          "brand": "Fashion Store",
+          "price": 2499000,
+          "displayOriginalPrice": "2999000đ",
+          "image": "https://via.placeholder.com/300x300?text=Product",
+          "size": "M",
+          "color": "Đỏ burgundy",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 2499000,
+      "shipping": 50000,
+      "shippingFee": 50000,
+      "total": 2549000,
+      "paymentMethod": "atm",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-16T15:45:35.834Z",
+      "id": "ORD1760629535284",
+      "updatedAt": "2025-10-16T15:45:35.839Z"
+    },
+    {
+      "orderId": "ORD1760630343705",
+      "orderNumber": "ORD1760630343705",
+      "userId": null,
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0901234567",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0901234567",
+        "address": "Hùng vương",
+        "ward": "ikk",
+        "district": "k",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng nhanh",
+        "price": 50000,
+        "estimatedDays": "1-2 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        },
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 1598000,
+      "shipping": 50000,
+      "shippingFee": 50000,
+      "total": 1648000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "nbbn",
+      "note": "nbbn",
+      "createdAt": "2025-10-16T15:59:03.762Z",
+      "id": "ORD1760630343705",
+      "updatedAt": "2025-10-16T15:59:03.765Z"
+    },
+    {
+      "orderId": "ORD1760630905016",
+      "orderNumber": "ORD1760630905016",
+      "userId": null,
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0374732997",
+        "address": "Hùng vương",
+        "ward": "ikk",
+        "district": "k",
+        "city": "Đà Nẵng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        },
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 1598000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 1628000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-16T16:08:25.178Z",
+      "id": "ORD1760630905016",
+      "updatedAt": "2025-10-16T16:08:25.183Z"
+    },
+    {
+      "orderId": "ORD1760631885743",
+      "orderNumber": "ORD1760631885743",
+      "userId": null,
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "037 654 76 58",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "037 654 76 58",
+        "address": "123abc",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "Hải Phòng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng hỏa tốc",
+        "price": 80000,
+        "estimatedDays": "Trong ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 799000,
+      "shipping": 80000,
+      "shippingFee": 80000,
+      "total": 879000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-16T16:24:45.807Z",
+      "id": "ORD1760631885743",
+      "updatedAt": "2025-10-16T16:24:45.810Z"
+    },
+    {
+      "orderId": "ORD1760632474670",
+      "orderNumber": "ORD1760632474670",
+      "userId": null,
+      "customerEmail": "taquy778@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0901234567",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0901234567",
+        "address": "jhyuuuuu",
+        "ward": "baby",
+        "district": "k",
+        "city": "Đà Nẵng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 799000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 829000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-16T16:34:34.894Z",
+      "id": "ORD1760632474670",
+      "updatedAt": "2025-10-16T16:34:34.900Z"
+    },
+    {
+      "orderId": "ORD1760632848509",
+      "orderNumber": "ORD1760632848509",
+      "userId": null,
+      "customerEmail": "admin@fashionstore.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0374732997",
+        "address": "jhyuuuuu",
+        "ward": "ikk",
+        "district": "k",
+        "city": "Hải Phòng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng hỏa tốc",
+        "price": 80000,
+        "estimatedDays": "Trong ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000004_ao002",
+          "name": "Áo Khoác Bomber Nam Streetwear",
+          "price": 999000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_005",
+            "url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+            "altText": "Áo khoác bomber nam màu đen streetwear",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 999000,
+      "shipping": 80000,
+      "shippingFee": 80000,
+      "total": 1079000,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-16T16:40:48.538Z",
+      "id": "ORD1760632848509",
+      "updatedAt": "2025-10-16T16:40:48.542Z"
+    },
+    {
+      "orderId": "ORD1760633232052",
+      "orderNumber": "ORD1760633232052",
+      "userId": null,
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0374732997",
+        "address": "123abc",
+        "ward": "ikk",
+        "district": "n",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000004_ao002",
+          "name": "Áo Khoác Bomber Nam Streetwear",
+          "price": 999000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_005",
+            "url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+            "altText": "Áo khoác bomber nam màu đen streetwear",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 999000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 1029000,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-16T16:47:12.084Z",
+      "id": "ORD1760633232052",
+      "updatedAt": "2025-10-16T16:47:12.086Z"
+    },
+    {
+      "orderId": "ORD1760948952894",
+      "orderNumber": "ORD1760948952894",
+      "userId": null,
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Trần Thị Hà Phương",
+      "customerPhone": "0376987321",
+      "shippingAddress": {
+        "fullName": "Trần Thị Hà Phương",
+        "phone": "0376987321",
+        "address": "Babybo",
+        "ward": "nbv",
+        "district": "mpc",
+        "city": "Hải Phòng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 799000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_002",
+            "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+            "altText": "Quần jeans nam slim fit màu xanh đậm",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 799000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 829000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "nbb",
+      "note": "nbb",
+      "createdAt": "2025-10-20T08:29:13.180Z",
+      "id": "ORD1760948952894",
+      "updatedAt": "2025-10-20T08:29:13.184Z"
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "wish_1727856000000_abc123",
+      "userId": "680e1784-b716-4bf4-b7f4-3c09fea5ab65",
+      "productId": "6",
+      "productName": "Túi xách mini",
+      "productPrice": 350000,
+      "productImage": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+      "addedAt": "2025-10-01T12:00:00.000Z"
+    },
+    {
+      "id": "wish_1727942400000_def456",
+      "userId": "21965b51-0435-4cc2-9ebd-85ebba537110",
+      "productId": "7",
+      "productName": "Áo len cổ lọ",
+      "productPrice": 520000,
+      "productImage": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+      "addedAt": "2025-10-02T16:30:00.000Z"
+    }
+  ]
+}

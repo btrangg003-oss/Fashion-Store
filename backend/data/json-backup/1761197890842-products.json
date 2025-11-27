@@ -1,0 +1,276 @@
+{
+  "products": [
+    {
+      "id": "prod_1727856000000_ao001",
+      "name": "Áo Thun Nam Basic Premium",
+      "description": "Áo thun nam chất liệu cotton 100% cao cấp, form regular fit thoải mái. Thiết kế basic dễ phối đồ, phù hợp mọi hoàn cảnh.",
+      "price": 299000,
+      "comparePrice": 399000,
+      "cost": 150000,
+      "sku": "ATN-BASIC-001",
+      "barcode": "8934567890123",
+      "stock": 50,
+      "lowStockThreshold": 10,
+      "trackQuantity": true,
+      "categoryId": "ao",
+      "tags": ["áo thun", "nam", "basic", "cotton"],
+      "vendor": "Fashion Elite",
+      "productType": "Áo thun",
+      "images": [
+        {
+          "id": "img_001",
+          "url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
+          "altText": "Áo thun nam basic màu trắng",
+          "position": 1
+        }
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
+      "status": "active",
+      "visibility": "visible",
+      "metaTitle": "Áo Thun Nam Basic Premium - Chất Liệu Cotton Cao Cấp",
+      "metaDescription": "Áo thun nam basic premium chất liệu cotton 100%, form regular fit thoải mái, thiết kế đơn giản dễ phối đồ.",
+      "slug": "ao-thun-nam-basic-premium",
+      "variants": [
+        {
+          "id": "var_001_s",
+          "title": "Size S - Trắng",
+          "price": 299000,
+          "sku": "ATN-BASIC-001-S-WHITE",
+          "stock": 15,
+          "options": [
+            { "name": "Size", "value": "S" },
+            { "name": "Màu sắc", "value": "Trắng" }
+          ]
+        },
+        {
+          "id": "var_001_m",
+          "title": "Size M - Trắng", 
+          "price": 299000,
+          "sku": "ATN-BASIC-001-M-WHITE",
+          "stock": 20,
+          "options": [
+            { "name": "Size", "value": "M" },
+            { "name": "Màu sắc", "value": "Trắng" }
+          ]
+        },
+        {
+          "id": "var_001_l",
+          "title": "Size L - Trắng",
+          "price": 299000,
+          "sku": "ATN-BASIC-001-L-WHITE", 
+          "stock": 15,
+          "options": [
+            { "name": "Size", "value": "L" },
+            { "name": "Màu sắc", "value": "Trắng" }
+          ]
+        }
+      ],
+      "weight": 200,
+      "dimensions": {
+        "length": 30,
+        "width": 25,
+        "height": 2
+      },
+      "requiresShipping": true,
+      "createdAt": "2025-10-01T10:00:00.000Z",
+      "updatedAt": "2025-10-02T08:30:00.000Z",
+      "publishedAt": "2025-10-01T10:00:00.000Z"
+    },
+    {
+      "id": "prod_1727856000001_quan001", 
+      "name": "Quần Jeans Nam Slim Fit",
+      "description": "Quần jeans nam form slim fit ôm vừa vặn, chất liệu denim cao cấp co giãn nhẹ. Thiết kế hiện đại với chi tiết rách nhẹ ở gối.",
+      "price": 599000,
+      "comparePrice": 799000,
+      "cost": 300000,
+      "sku": "QJN-SLIM-001",
+      "barcode": "8934567890124",
+      "stock": 35,
+      "lowStockThreshold": 10,
+      "trackQuantity": true,
+      "categoryId": "quan",
+      "tags": ["quần jeans", "nam", "slim fit", "denim"],
+      "vendor": "Denim Pro",
+      "productType": "Quần jeans",
+      "images": [
+        {
+          "id": "img_002",
+          "url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+          "altText": "Quần jeans nam slim fit màu xanh đậm",
+          "position": 1
+        }
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+      "status": "active",
+      "visibility": "visible", 
+      "metaTitle": "Quần Jeans Nam Slim Fit - Denim Cao Cấp Co Giãn",
+      "metaDescription": "Quần jeans nam slim fit chất liệu denim cao cấp co giãn, form ôm vừa vặn, thiết kế hiện đại với chi tiết rách nhẹ.",
+      "slug": "quan-jeans-nam-slim-fit",
+      "weight": 500,
+      "requiresShipping": true,
+      "createdAt": "2025-10-01T11:00:00.000Z",
+      "updatedAt": "2025-10-02T09:15:00.000Z",
+      "publishedAt": "2025-10-01T11:00:00.000Z"
+    },
+    {
+      "id": "prod_1727856000002_giay001",
+      "name": "Giày Sneaker Nam Trắng Classic",
+      "description": "Giày sneaker nam màu trắng thiết kế classic timeless. Chất liệu da tổng hợp cao cấp, đế cao su chống trượt, phù hợp mọi phong cách.",
+      "price": 899000,
+      "comparePrice": 1199000,
+      "cost": 450000,
+      "sku": "GSN-WHITE-001",
+      "barcode": "8934567890125",
+      "stock": 25,
+      "lowStockThreshold": 5,
+      "trackQuantity": true,
+      "categoryId": "giay",
+      "tags": ["giày sneaker", "nam", "trắng", "classic"],
+      "vendor": "Sneaker World",
+      "productType": "Giày sneaker",
+      "images": [
+        {
+          "id": "img_003",
+          "url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+          "altText": "Giày sneaker nam màu trắng classic",
+          "position": 1
+        }
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+      "status": "active",
+      "visibility": "visible",
+      "metaTitle": "Giày Sneaker Nam Trắng Classic - Thiết Kế Timeless",
+      "metaDescription": "Giày sneaker nam màu trắng thiết kế classic, chất liệu da cao cấp, đế chống trượt, phù hợp mọi phong cách thời trang.",
+      "slug": "giay-sneaker-nam-trang-classic",
+      "weight": 800,
+      "dimensions": {
+        "length": 30,
+        "width": 12,
+        "height": 10
+      },
+      "requiresShipping": true,
+      "createdAt": "2025-10-01T12:00:00.000Z",
+      "updatedAt": "2025-10-02T10:00:00.000Z",
+      "publishedAt": "2025-10-01T12:00:00.000Z"
+    },
+    {
+      "id": "prod_1727856000003_pk001",
+      "name": "Túi Xách Nữ Mini Elegant",
+      "description": "Túi xách nữ size mini thiết kế elegant sang trọng. Chất liệu da PU cao cấp, có dây đeo chéo tiện lợi, phù hợp đi làm và dạo phố.",
+      "price": 450000,
+      "comparePrice": 599000,
+      "cost": 200000,
+      "sku": "TXN-MINI-001",
+      "barcode": "8934567890126",
+      "stock": 40,
+      "lowStockThreshold": 8,
+      "trackQuantity": true,
+      "categoryId": "phu-kien",
+      "tags": ["túi xách", "nữ", "mini", "elegant"],
+      "vendor": "Luxury Bags",
+      "productType": "Túi xách",
+      "images": [
+        {
+          "id": "img_004",
+          "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+          "altText": "Túi xách nữ mini màu đen elegant",
+          "position": 1
+        }
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+      "status": "active",
+      "visibility": "visible",
+      "metaTitle": "Túi Xách Nữ Mini Elegant - Da PU Cao Cấp",
+      "metaDescription": "Túi xách nữ mini thiết kế elegant, chất liệu da PU cao cấp, dây đeo chéo tiện lợi, phù hợp đi làm và dạo phố.",
+      "slug": "tui-xach-nu-mini-elegant",
+      "weight": 300,
+      "dimensions": {
+        "length": 20,
+        "width": 15,
+        "height": 8
+      },
+      "requiresShipping": true,
+      "createdAt": "2025-10-01T13:00:00.000Z",
+      "updatedAt": "2025-10-02T11:00:00.000Z",
+      "publishedAt": "2025-10-01T13:00:00.000Z"
+    },
+    {
+      "id": "prod_1727856000004_ao002",
+      "name": "Áo Khoác Bomber Nam Streetwear",
+      "description": "Áo khoác bomber nam phong cách streetwear hiện đại. Chất liệu polyester chống gió, thiết kế oversized trendy, có nhiều màu sắc.",
+      "price": 799000,
+      "comparePrice": 999000,
+      "cost": 400000,
+      "sku": "AKB-STREET-001",
+      "barcode": "8934567890127",
+      "stock": 20,
+      "lowStockThreshold": 5,
+      "trackQuantity": true,
+      "categoryId": "ao",
+      "tags": ["áo khoác", "bomber", "nam", "streetwear"],
+      "vendor": "Street Fashion",
+      "productType": "Áo khoác",
+      "images": [
+        {
+          "id": "img_005",
+          "url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+          "altText": "Áo khoác bomber nam màu đen streetwear",
+          "position": 1
+        }
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+      "status": "active",
+      "visibility": "visible",
+      "metaTitle": "Áo Khoác Bomber Nam Streetwear - Phong Cách Hiện Đại",
+      "metaDescription": "Áo khoác bomber nam streetwear chất liệu polyester chống gió, thiết kế oversized trendy, phong cách hiện đại.",
+      "slug": "ao-khoac-bomber-nam-streetwear",
+      "weight": 600,
+      "requiresShipping": true,
+      "createdAt": "2025-10-01T14:00:00.000Z",
+      "updatedAt": "2025-10-02T12:00:00.000Z",
+      "publishedAt": "2025-10-01T14:00:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "ao",
+      "name": "Áo",
+      "slug": "ao",
+      "description": "Các loại áo thời trang: áo thun, áo sơ mi, áo khoác, áo polo...",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300",
+      "metaTitle": "Áo Thời Trang Nam Nữ - Chất Lượng Cao",
+      "metaDescription": "Bộ sưu tập áo thời trang đa dạng: áo thun, áo sơ mi, áo khoác với chất liệu cao cấp và thiết kế hiện đại.",
+      "sortOrder": 1
+    },
+    {
+      "id": "quan",
+      "name": "Quần",
+      "slug": "quan", 
+      "description": "Các loại quần thời trang: quần jeans, quần tây, quần short, quần jogger...",
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300",
+      "metaTitle": "Quần Thời Trang Nam Nữ - Đa Dạng Kiểu Dáng",
+      "metaDescription": "Bộ sưu tập quần thời trang: jeans, tây, short, jogger với chất liệu tốt và form dáng đẹp.",
+      "sortOrder": 2
+    },
+    {
+      "id": "giay",
+      "name": "Giày",
+      "slug": "giay",
+      "description": "Giày dép thời trang: sneaker, giày tây, sandal, boots...",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300",
+      "metaTitle": "Giày Dép Thời Trang - Phong Cách Hiện Đại",
+      "metaDescription": "Bộ sưu tập giày dép đa dạng: sneaker, giày tây, sandal với thiết kế thời trang và chất lượng cao.",
+      "sortOrder": 3
+    },
+    {
+      "id": "phu-kien",
+      "name": "Phụ kiện",
+      "slug": "phu-kien",
+      "description": "Phụ kiện thời trang: túi xách, ví, thắt lưng, mũ, kính...",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300",
+      "metaTitle": "Phụ Kiện Thời Trang - Hoàn Thiện Phong Cách",
+      "metaDescription": "Bộ sưu tập phụ kiện thời trang: túi xách, ví, thắt lưng, mũ giúp hoàn thiện phong cách của bạn.",
+      "sortOrder": 4
+    }
+  ]
+}

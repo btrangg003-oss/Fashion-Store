@@ -1,0 +1,691 @@
+{
+  "orders": [
+    {
+      "id": "order_1727856000000_abc123",
+      "orderNumber": "FS241001001",
+      "userId": "680e1784-b716-4bf4-b7f4-3c09fea5ab65",
+      "items": [
+        {
+          "id": "1",
+          "name": "Áo thun basic trắng",
+          "price": 299000,
+          "quantity": 2,
+          "size": "M",
+          "color": "Trắng",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+        },
+        {
+          "id": "2",
+          "name": "Quần jeans slim fit",
+          "price": 599000,
+          "quantity": 1,
+          "size": "30",
+          "color": "Xanh đậm",
+          "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400"
+        }
+      ],
+      "subtotal": 1197000,
+      "shipping": 30000,
+      "total": 1227000,
+      "status": "delivered",
+      "paymentMethod": "cod",
+      "shippingAddress": {
+        "fullName": "Nhi Nhi",
+        "phone": "0372895004",
+        "address": "123 Nguyễn Văn Linh",
+        "ward": "Phường 1",
+        "district": "Quận 7",
+        "city": "TP.HCM",
+        "email": "btrangg003@gmail.com"
+      },
+      "notes": "Giao hàng giờ hành chính",
+      "createdAt": "2025-10-01T10:30:00.000Z",
+      "updatedAt": "2025-10-01T15:45:00.000Z",
+      "userEmail": "btrangg003@gmail.com",
+      "customerEmail": "btrangg003@gmail.com"
+    },
+    {
+      "id": "order_1727942400000_def456",
+      "orderNumber": "FS241002002",
+      "userId": "21965b51-0435-4cc2-9ebd-85ebba537110",
+      "items": [
+        {
+          "id": "3",
+          "name": "Váy maxi hoa nhí",
+          "price": 450000,
+          "quantity": 1,
+          "size": "S",
+          "color": "Hồng",
+          "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400"
+        }
+      ],
+      "subtotal": 450000,
+      "shipping": 30000,
+      "total": 480000,
+      "status": "delivered",
+      "paymentMethod": "banking",
+      "shippingAddress": {
+        "fullName": "Nhi Baby",
+        "phone": "0372987004",
+        "address": "456 Lê Văn Việt",
+        "ward": "Phường Tăng Nhơn Phú A",
+        "district": "Quận 9",
+        "city": "TP.HCM",
+        "email": "haphuongbabvc@gmail.com"
+      },
+      "notes": "",
+      "createdAt": "2025-10-02T08:15:00.000Z",
+      "updatedAt": "2025-11-13T14:13:08.920Z",
+      "userEmail": "haphuongbabvc@gmail.com",
+      "customerEmail": "haphuongbabvc@gmail.com"
+    },
+    {
+      "id": "order_1728028800000_ghi789",
+      "orderNumber": "FS241003003",
+      "userId": "680e1784-b716-4bf4-b7f4-3c09fea5ab65",
+      "items": [
+        {
+          "id": "4",
+          "name": "Áo khoác bomber",
+          "price": 799000,
+          "quantity": 1,
+          "size": "L",
+          "color": "Đen",
+          "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400"
+        },
+        {
+          "id": "5",
+          "name": "Giày sneaker trắng",
+          "price": 1200000,
+          "quantity": 1,
+          "size": "42",
+          "color": "Trắng",
+          "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400"
+        }
+      ],
+      "subtotal": 1999000,
+      "shipping": 0,
+      "total": 1999000,
+      "status": "cancelled",
+      "paymentMethod": "banking",
+      "shippingAddress": {
+        "fullName": "Nhi Nhi",
+        "phone": "0372895004",
+        "address": "123 Nguyễn Văn Linh",
+        "ward": "Phường 1",
+        "district": "Quận 7",
+        "city": "TP.HCM",
+        "email": "btrangg003@gmail.com"
+      },
+      "notes": "Miễn phí ship cho đơn hàng trên 1.5M",
+      "createdAt": "2025-10-03T14:20:00.000Z",
+      "updatedAt": "2025-10-14T15:09:56.248Z",
+      "paymentStatus": "failed",
+      "paidAt": "2025-10-14T15:04:59.980Z",
+      "paymentFailureReason": "Refunded by admin",
+      "userEmail": "btrangg003@gmail.com",
+      "customerEmail": "btrangg003@gmail.com"
+    },
+    {
+      "orderId": "ORD1761291180872",
+      "orderNumber": "ORD1761291180872",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "taquy778@gmail.com",
+      "customerName": "Nguyễn Vũ Cẩm LY",
+      "customerPhone": "037 654 76 58",
+      "shippingAddress": {
+        "fullName": "Nguyễn Vũ Cẩm LY",
+        "phone": "037 654 76 58",
+        "address": "123abc",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng nhanh",
+        "price": 50000,
+        "estimatedDays": "1-2 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000002_giay001",
+          "name": "Giày Sneaker Nam Trắng Classic",
+          "price": 1199000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": {
+            "id": "img_003",
+            "url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400",
+            "altText": "Giày sneaker nam màu trắng classic",
+            "position": 1
+          }
+        }
+      ],
+      "subtotal": 1199000,
+      "shipping": 50000,
+      "shippingFee": 50000,
+      "total": 1249000,
+      "paymentMethod": "atm",
+      "paymentStatus": "processing",
+      "status": "processing",
+      "orderStatus": "pending",
+      "notes": "baby cute",
+      "note": "baby cute",
+      "createdAt": "2025-10-24T07:33:00.925Z",
+      "id": "ORD1761291180872",
+      "updatedAt": "2025-10-24T10:02:33.203Z"
+    },
+    {
+      "orderId": "ORD1761293169552",
+      "orderNumber": "ORD1761293169552",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Nguyễn Vũ Cẩm LY",
+      "customerPhone": "0901234567",
+      "shippingAddress": {
+        "fullName": "Nguyễn Vũ Cẩm LY",
+        "phone": "0901234567",
+        "address": "123abc",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng hỏa tốc",
+        "price": 80000,
+        "estimatedDays": "Trong ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "brand": "Fashion Store",
+          "price": 799000,
+          "displayOriginalPrice": "599.000đ",
+          "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+          "size": "",
+          "color": "",
+          "quantity": 1
+        },
+        {
+          "id": "prod_1727856000003_pk001",
+          "name": "Túi Xách Nữ Mini Elegant",
+          "brand": "Fashion Store",
+          "price": 599000,
+          "displayOriginalPrice": "450.000đ",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+          "size": "",
+          "color": "",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1398000,
+      "shipping": 80000,
+      "shippingFee": 80000,
+      "total": 1478000,
+      "paymentMethod": "vnpay",
+      "paymentStatus": "processing",
+      "status": "delivered",
+      "orderStatus": "pending",
+      "notes": "Baby",
+      "note": "Baby",
+      "createdAt": "2025-10-24T08:06:10.422Z",
+      "id": "ORD1761293169552",
+      "updatedAt": "2025-10-24T09:37:28.224Z"
+    },
+    {
+      "orderId": "ORD1761297112049",
+      "orderNumber": "ORD1761297112049",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "hphwg2211@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0901234567",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0901234567",
+        "address": "jhyuuuuu",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "Đà Nẵng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng hỏa tốc",
+        "price": 80000,
+        "estimatedDays": "Trong ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000000_ao001",
+          "name": "Áo Thun Nam Basic Premium",
+          "brand": "Fashion Store",
+          "price": 399000,
+          "displayOriginalPrice": "299.000đ",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
+          "size": "M",
+          "color": "Trắng",
+          "quantity": 1
+        },
+        {
+          "id": "prod_1727856000004_ao002",
+          "name": "Áo Khoác Bomber Nam Streetwear",
+          "brand": "Fashion Store",
+          "price": 999000,
+          "displayOriginalPrice": "799.000đ",
+          "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",
+          "size": "",
+          "color": "",
+          "quantity": 1
+        },
+        {
+          "id": "prod_1727856000003_pk001",
+          "name": "Túi Xách Nữ Mini Elegant",
+          "brand": "Fashion Store",
+          "price": 599000,
+          "displayOriginalPrice": "450.000đ",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+          "size": "",
+          "color": "",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1997000,
+      "shipping": 80000,
+      "shippingFee": 80000,
+      "total": 2077000,
+      "paymentMethod": "visa",
+      "paymentStatus": "processing",
+      "status": "delivered",
+      "orderStatus": "pending",
+      "notes": "baby",
+      "note": "baby",
+      "createdAt": "2025-10-24T09:11:52.094Z",
+      "id": "ORD1761297112049",
+      "updatedAt": "2025-10-24T09:26:17.649Z"
+    },
+    {
+      "orderId": "ORD1761298807369",
+      "orderNumber": "ORD1761298807369",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "btrangg003@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "037 654 76 58",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "037 654 76 58",
+        "address": "jhyuuuuu",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "Hải Phòng"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng hỏa tốc",
+        "price": 80000,
+        "estimatedDays": "Trong ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000004_ao002",
+          "name": "Áo Khoác Bomber Nam Streetwear",
+          "price": 999000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400"
+        }
+      ],
+      "subtotal": 999000,
+      "shipping": 80000,
+      "shippingFee": 80000,
+      "total": 1079000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "delivered",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-24T09:40:07.579Z",
+      "id": "ORD1761298807369",
+      "updatedAt": "2025-10-24T10:04:03.549Z"
+    },
+    {
+      "orderId": "ORD1761300855290",
+      "orderNumber": "ORD1761300855290",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "hphwg2211@gmail.com",
+      "customerName": "b",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "b",
+        "phone": "0374732997",
+        "address": "mmdmd",
+        "ward": "ikk",
+        "district": "Hồng Bàng",
+        "city": "Hà Nội"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000003_pk001",
+          "name": "Túi Xách Nữ Mini Elegant",
+          "price": 599000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400"
+        }
+      ],
+      "subtotal": 599000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 629000,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "processing",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-24T10:14:17.684Z",
+      "id": "ORD1761300855290",
+      "updatedAt": "2025-10-24T10:27:02.103Z"
+    },
+    {
+      "orderId": "ORD1761387619243",
+      "orderNumber": "ORD1761387619243",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "admin@fashion.com",
+      "customerName": "Nguyễn Vũ Cẩm LY",
+      "customerPhone": "0901234567",
+      "shippingAddress": {
+        "fullName": "Nguyễn Vũ Cẩm LY",
+        "phone": "0901234567",
+        "address": "jhyuuuuu",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng nhanh",
+        "price": 50000,
+        "estimatedDays": "1-2 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000002_giay001",
+          "name": "Giày Sneaker Nam Trắng Classic",
+          "price": 1199000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400"
+        }
+      ],
+      "subtotal": 1199000,
+      "shipping": 50000,
+      "shippingFee": 50000,
+      "total": 1249000,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "delivered",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-25T10:20:19.273Z",
+      "id": "ORD1761387619243",
+      "updatedAt": "2025-10-25T10:23:55.201Z"
+    },
+    {
+      "orderId": "ORD1761455782632",
+      "orderNumber": "ORD1761455782632",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "taquy778@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0901234567",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0901234567",
+        "address": "123abc",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng nhanh",
+        "price": 50000,
+        "estimatedDays": "1-2 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000000_ao001",
+          "name": "Áo Thun Nam Basic Premium",
+          "price": 399000,
+          "quantity": 1,
+          "size": "M",
+          "color": "Trắng",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+        }
+      ],
+      "subtotal": 399000,
+      "shipping": 50000,
+      "shippingFee": 50000,
+      "total": 449000,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "cancelled",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-26T05:16:22.672Z",
+      "id": "ORD1761455782632",
+      "updatedAt": "2025-10-26T05:24:27.226Z",
+      "cancelledAt": "2025-10-26T05:24:27.225Z",
+      "cancelReason": "Khách hàng hủy đơn",
+      "cancelledBy": "admin_taquy778_2025"
+    },
+    {
+      "orderId": "ORD1761557992034",
+      "orderNumber": "ORD1761557992034",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "taquy778@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0374732997",
+        "address": "TP Hồ Chí Minh ",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1727856000003_pk001",
+          "name": "Túi Xách Nữ Mini Elegant",
+          "price": 599000,
+          "quantity": 1,
+          "size": "",
+          "color": "",
+          "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400"
+        }
+      ],
+      "subtotal": 599000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 629000,
+      "paymentMethod": "cod",
+      "paymentStatus": "pending",
+      "status": "delivered",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-10-27T09:39:52.091Z",
+      "id": "ORD1761557992034",
+      "updatedAt": "2025-10-27T09:43:39.188Z"
+    },
+    {
+      "id": "order_1762594903173_test",
+      "orderNumber": "FS94903174",
+      "userId": "admin_taquy778_2025",
+      "items": [
+        {
+          "id": "prod_1727856000000_ao001",
+          "name": "Áo Thun Nam Basic Premium",
+          "price": 299000,
+          "quantity": 2,
+          "size": "L",
+          "color": "Trắng",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+        },
+        {
+          "id": "prod_1727856000001_quan001",
+          "name": "Quần Jeans Nam Slim Fit",
+          "price": 599000,
+          "quantity": 1,
+          "size": "32",
+          "color": "Xanh đậm",
+          "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400"
+        }
+      ],
+      "subtotal": 1197000,
+      "shipping": 30000,
+      "total": 1227000,
+      "status": "delivered",
+      "paymentMethod": "cod",
+      "shippingAddress": {
+        "fullName": "Admin ",
+        "phone": "0123456789",
+        "address": "123 Test Street",
+        "ward": "Phường 1",
+        "district": "Quận 1",
+        "city": "TP.HCM",
+        "email": "taquy778@gmail.com"
+      },
+      "notes": "Test order for review system",
+      "createdAt": "2025-11-01T09:41:43.174Z",
+      "updatedAt": "2025-11-06T09:41:43.176Z",
+      "userEmail": "taquy778@gmail.com",
+      "customerEmail": "taquy778@gmail.com"
+    },
+    {
+      "orderId": "ORD1762940757716",
+      "orderNumber": "ORD1762940757716",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "taquy778@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0374732997",
+        "address": "jhyuuuuu",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "Hà Nội"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng tiêu chuẩn",
+        "price": 30000,
+        "estimatedDays": "3-5 ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1762700269954_myltj72lt",
+          "name": "Váy đầm cup xoè dáng dài kèm bản trễ vai mặc 4 KIỂU, đầm dự tiệc cao cấp ",
+          "price": 200000,
+          "quantity": 1,
+          "size": "M",
+          "color": "Đỏ",
+          "image": "data:image/jpeg;base64,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"
+        }
+      ],
+      "subtotal": 200000,
+      "shipping": 30000,
+      "shippingFee": 30000,
+      "total": 230000,
+      "paymentMethod": "momo",
+      "paymentStatus": "processing",
+      "status": "processing",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-11-12T09:45:58.221Z",
+      "id": "ORD1762940757716",
+      "updatedAt": "2025-11-12T09:52:47.885Z"
+    },
+    {
+      "orderId": "ORD1763040541705",
+      "orderNumber": "ORD1763040541705",
+      "userId": "admin_taquy778_2025",
+      "customerEmail": "taquy778@gmail.com",
+      "customerName": "Bùi Thị Huyền Trang",
+      "customerPhone": "0374732997",
+      "shippingAddress": {
+        "fullName": "Bùi Thị Huyền Trang",
+        "phone": "0374732997",
+        "address": "jhyuuuuu",
+        "ward": "baby",
+        "district": "Hồng Bàng",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "shippingMethod": {
+        "name": "Giao hàng hỏa tốc",
+        "price": 80000,
+        "estimatedDays": "Trong ngày"
+      },
+      "items": [
+        {
+          "id": "prod_1762742419422_9yiavsoam",
+          "name": "váy croptop trễ vai",
+          "price": 400000,
+          "quantity": 2,
+          "size": "M",
+          "color": "Đen",
+          "image": "data:image/jpeg;base64,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"
+        }
+      ],
+      "subtotal": 800000,
+      "discount": 716000,
+      "voucherCode": "FGSTD33H",
+      "shipping": 80000,
+      "shippingFee": 80000,
+      "total": 164000,
+      "paymentMethod": "vnpay",
+      "paymentStatus": "processing",
+      "status": "pending",
+      "orderStatus": "pending",
+      "notes": "",
+      "note": "",
+      "createdAt": "2025-11-13T13:29:02.030Z",
+      "id": "ORD1763040541705",
+      "updatedAt": "2025-11-13T13:29:02.035Z"
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "wish_1727856000000_abc123",
+      "userId": "680e1784-b716-4bf4-b7f4-3c09fea5ab65",
+      "productId": "6",
+      "productName": "Túi xách mini",
+      "productPrice": 350000,
+      "productImage": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400",
+      "addedAt": "2025-10-01T12:00:00.000Z"
+    },
+    {
+      "id": "wish_1727942400000_def456",
+      "userId": "21965b51-0435-4cc2-9ebd-85ebba537110",
+      "productId": "7",
+      "productName": "Áo len cổ lọ",
+      "productPrice": 520000,
+      "productImage": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400",
+      "addedAt": "2025-10-02T16:30:00.000Z"
+    }
+  ]
+}

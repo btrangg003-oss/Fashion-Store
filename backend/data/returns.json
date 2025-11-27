@@ -1,0 +1,46 @@
+{
+  "returns": [
+    {
+      "id": "return_1762918979912_z17ik8aqk",
+      "returnNumber": "RT18979912881",
+      "userId": "admin_taquy778_2025",
+      "orderId": "order_1762594903173_test",
+      "orderNumber": "FS94903174",
+      "items": [
+        {
+          "productId": "prod_1727856000000_ao001",
+          "productName": "Áo Thun Nam Basic Premium",
+          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",
+          "size": "L",
+          "color": "Trắng",
+          "quantity": 2,
+          "price": 299000,
+          "reason": "Sai size/màu sắc"
+        },
+        {
+          "productId": "prod_1727856000001_quan001",
+          "productName": "Quần Jeans Nam Slim Fit",
+          "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400",
+          "size": "32",
+          "color": "Xanh đậm",
+          "quantity": 1,
+          "price": 599000,
+          "reason": "Sai size/màu sắc"
+        }
+      ],
+      "reason": "wrong_size",
+      "reasonText": "Sai size/màu sắc",
+      "description": "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+      "photos": [],
+      "refundAmount": 1197000,
+      "refundMethod": "wallet",
+      "refundStatus": "pending",
+      "status": "approved",
+      "createdAt": "2025-11-12T03:42:59.912Z",
+      "updatedAt": "2025-11-12T07:52:09.536Z",
+      "processedBy": "taquy778@gmail.com",
+      "processedAt": "2025-11-12T07:52:09.518Z",
+      "approvedAt": "2025-11-12T07:52:09.518Z"
+    }
+  ]
+}

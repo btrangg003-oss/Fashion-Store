@@ -1,0 +1,36 @@
+[
+  {
+    "id": "camp_mhwydc0zak44pzst0mk",
+    "name": "Giam giá đặc biệt 11.11",
+    "description": "Từ ngày 11.11 sẽ dược giảm giá các sản phẩm ",
+    "type": "flash_sale",
+    "status": "active",
+    "startDate": "2025-11-12T00:00:00.000Z",
+    "endDate": "2025-12-13T00:00:00.000Z",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "targetAudience": "all",
+    "targetSegmentIds": [],
+    "estimatedReach": 0,
+    "voucherIds": [
+      "mhwy9k2aad8ybpg46i7"
+    ],
+    "productIds": [],
+    "bannerImageUrl": "",
+    "landingPageUrl": "",
+    "emailSubject": "",
+    "emailTemplate": "",
+    "emailSentCount": 0,
+    "budget": 1000000000,
+    "goalType": "revenue",
+    "goalValue": 5000000000,
+    "impressions": 0,
+    "clicks": 0,
+    "conversions": 0,
+    "revenue": 0,
+    "createdBy": "admin_taquy778_2025",
+    "createdAt": "2025-11-13T04:52:36.516Z",
+    "launchedAt": "2025-11-13T04:52:39.977Z",
+    "updatedAt": "2025-11-13T13:22:40.104Z",
+    "updatedBy": "admin_taquy778_2025"
+  }
+]
