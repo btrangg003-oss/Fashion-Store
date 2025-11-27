@@ -21,6 +21,18 @@ build/
 */.env.production
 */.env.*.local
 
+# Database files with real data
+backend/data/auth.json
+backend/data/orders.json
+backend/data/products.json
+backend/data/*.json
+!backend/data/*.json.example
+
+# Database files with real data
+backend/data/auth.json
+backend/data/orders.json
+backend/data/json-backup/*.json
+
 # Logs
 logs/
 *.log
