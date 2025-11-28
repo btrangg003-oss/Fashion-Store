@@ -108,3 +108,4 @@ In backend code, update allowed origins to include your Vercel domain.
 
 ## Support
 For issues, check logs in Vercel dashboard under Deployments > Function Logs
+git add .

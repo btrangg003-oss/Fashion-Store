@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../components/Layout/Layout'
-import ProfileContent from '../components/Profile/ProfileContent'
-import ProtectedRoute from '../components/Auth/ProtectedRoute'
+import Layout from '../src/components/layout/Layout'
+import ProfileContent from '../src/components/Profile/ProfileContent'
+import ProtectedRoute from '../src/components/Auth/ProtectedRoute'
 
 export default function Profile() {
   return (

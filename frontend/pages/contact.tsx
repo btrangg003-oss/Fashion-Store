@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../components/Layout/Layout'
-import ContactHero from '../components/Contact/ContactHero'
-import ContactForm from '../components/Contact/ContactForm'
-import ContactInfo from '../components/Contact/ContactInfo'
-import ContactMap from '../components/Contact/ContactMap'
+import Layout from '../src/components/layout/Layout'
+import ContactHero from '../src/components/Contact/ContactHero'
+import ContactForm from '../src/components/Contact/ContactForm'
+import ContactInfo from '../src/components/Contact/ContactInfo'
+import ContactMap from '../src/components/Contact/ContactMap'
 
 export default function Contact() {
   return (

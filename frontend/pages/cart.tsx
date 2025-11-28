@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../components/Layout/Layout'
-import CartItems from '../components/Cart/CartItems'
-import CartSummary from '../components/Cart/CartSummary'
-import ProtectedRoute from '../components/Auth/ProtectedRoute'
+import Layout from '../src/components/layout/Layout'
+import CartItems from '../src/components/Cart/CartItems'
+import CartSummary from '../src/components/Cart/CartSummary'
+import ProtectedRoute from '../src/components/Auth/ProtectedRoute'
 
 export default function Cart() {
   return (

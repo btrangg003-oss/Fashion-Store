@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
-import Layout from '../components/Layout/Layout'
-import SearchResults from '../components/Search/SearchResults'
-import SearchFilters from '../components/Search/SearchFilters'
+import Layout from '../src/components/layout/Layout'
+import SearchResults from '../src/components/Search/SearchResults'
+import SearchFilters from '../src/components/Search/SearchFilters'
 
 export default function Search() {
   const router = useRouter()
