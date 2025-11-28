@@ -1,9 +1,9 @@
 import type { AppProps } from 'next/app'
-import { AuthProvider } from '../src/contexts/AuthContext'
-import { ThemeProvider } from '../src/contexts/ThemeContext'
-import { LanguageProvider } from '../src/contexts/LanguageContext'
-import { NotificationProvider } from '../src/contexts/NotificationContext'
-import '../src/styles/theme.css'
+import { AuthProvider } from '@/contexts/AuthContext'
+import { ThemeProvider } from '@/contexts/ThemeContext'
+import { LanguageProvider } from '@/contexts/LanguageContext'
+import { NotificationProvider } from '@/contexts/NotificationContext'
+import '@/styles/theme.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

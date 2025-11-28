@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../src/components/layout/Layout'
-import AboutHero from '../src/components/About/AboutHero'
-import AboutStory from '../src/components/About/AboutStory'
-import AboutTeam from '../src/components/About/AboutTeam'
-import AboutValues from '../src/components/About/AboutValues'
+import Layout from '@/components/layout/Layout'
+import AboutHero from '@/components/About/AboutHero'
+import AboutStory from '@/components/About/AboutStory'
+import AboutTeam from '@/components/About/AboutTeam'
+import AboutValues from '@/components/About/AboutValues'
 
 export default function About() {
   return (
