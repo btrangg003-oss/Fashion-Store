@@ -18,7 +18,7 @@
 
 ### ⚠️ Thông Tin Nhạy Cảm Trong `.env.local`
 **KHÔNG BAO GIỜ** commit file này! Nó chứa:
-- OpenAI API Key: `sk-proj-o78yODPoz...`
+- OpenAI API Key
 - MongoDB URI với username/password
 - Gmail app passwords
 - Postmark API token
