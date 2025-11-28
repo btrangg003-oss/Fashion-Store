@@ -4,8 +4,8 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { FiMail, FiArrowLeft } from 'react-icons/fi'
-import Layout from '../../components/Layout/Layout'
-import ProtectedRoute from '../../components/Auth/ProtectedRoute'
+import Layout from '@/components/layout/Layout'
+import ProtectedRoute from '@/components/Auth/ProtectedRoute'
 
 const Section = styled.section`
   padding: 120px 0 80px;

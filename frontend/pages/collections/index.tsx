@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../../components/Layout/Layout'
-import CollectionsHero from '../../components/Collections/CollectionsHero'
-import CollectionsGrid from '../../components/Collections/CollectionsGrid'
+import Layout from '@/components/layout/Layout'
+import CollectionsHero from '@/components/Collections/CollectionsHero'
+import CollectionsGrid from '@/components/Collections/CollectionsGrid'
 
 export default function Collections() {
   return (

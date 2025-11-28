@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import Layout from '../../components/Layout/Layout'
-import VerificationForm from '../../components/Auth/VerificationForm'
+import Layout from '@/components/layout/Layout'
+import VerificationForm from '@/components/Auth/VerificationForm'
 
 const Container = styled.div`
   min-height: 80vh;

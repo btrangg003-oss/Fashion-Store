@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../../components/Layout/Layout'
-import RegisterForm from '../../components/Auth/RegisterForm'
-import ProtectedRoute from '../../components/Auth/ProtectedRoute'
+import Layout from '@/components/layout/Layout'
+import RegisterForm from '@/components/Auth/RegisterForm'
+import ProtectedRoute from '@/components/Auth/ProtectedRoute'
 
 export default function Register() {
   return (
