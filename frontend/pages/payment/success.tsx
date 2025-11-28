@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Layout from '@/components/Layout/Layout';
+import Layout from '@/components/layout/Layout';
 import { FiCheckCircle, FiPackage, FiHome } from 'react-icons/fi';
 
 export default function PaymentSuccessPage() {

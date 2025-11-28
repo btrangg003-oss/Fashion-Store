@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Layout from '@/components/Layout/Layout';
+import Layout from '@/components/layout/Layout';
 import { FiXCircle, FiRefreshCw, FiHome, FiHelpCircle } from 'react-icons/fi';
 
 export default function PaymentFailedPage() {

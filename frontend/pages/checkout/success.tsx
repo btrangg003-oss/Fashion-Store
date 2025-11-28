@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { FaCheckCircle, FaBox, FaHome } from 'react-icons/fa';
-import Layout from '@/components/Layout/Layout';
+import Layout from '@/components/layout/Layout';
 
 const CheckoutSuccessPage = () => {
   const router = useRouter();

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Layout from '@/components/Layout/Layout';
+import Layout from '@/components/layout/Layout';
 import ProductReviews from '@/components/Products/ProductReviews';
 import { FiShoppingCart, FiHeart, FiShare2, FiStar, FiMinus, FiPlus } from 'react-icons/fi';
 

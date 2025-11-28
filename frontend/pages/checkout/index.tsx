@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
-import Layout from '@/components/Layout/Layout';
+import Layout from '@/components/layout/Layout';
 import CheckoutSteps from '@/components/Checkout/CheckoutSteps';
 import ShippingForm, { ShippingData } from '@/components/Checkout/ShippingForm';
 import ShippingMethod, { ShippingMethodData } from '@/components/Checkout/ShippingMethod';
